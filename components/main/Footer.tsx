@@ -54,9 +54,6 @@ const Footer = () => {
 
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">About</div>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <span className="text-[15px] ml-[6px]">Become Sponsor</span>
-                        </p>
 
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <span className="text-[15px] ml-[6px]">Learning about me</span>
