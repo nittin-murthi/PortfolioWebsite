@@ -9,7 +9,7 @@ const Projects = () => {
             </h1>
                 <div className='h-full w-full flex flex-col md:flex-row gap-10 px-10'>
                     <ProjectCard
-                        src="/PURE-Final-Presentation.pptx.jpg"
+                        src="./PURE-Final-Presentation.pptx.jpg"
                         title="Deep Learning for Vascular Segmentation"
                         highlights="Developed and trained deep learning models on MRI brain scans, achieving notable results: 
                         ∗ U-Net: Achieved a Mean IoU of 0.813, a Precision of 0.935, and an Accuracy of 0.9878.
@@ -21,7 +21,7 @@ const Projects = () => {
                         skills="Python, Tensorflow, Keras, PyTorch, Scikit-Learn, Pandas, Numpy, Amazon Sagemaker, NVIDIA CUDA, Jupyter Notebook"
                     />
                     <ProjectCard
-                        src="/ecoservity_logo.jpeg"
+                        src="./ecoservity_logo.jpeg"
                         title="Data Insight Extraction using LLMs"
                         highlights="Led the development of a state-of-the-art conversational bot using OpenAI API, llama-index, and HuggingFace. Achieved a remarkable 40% increase in user engagement and a 90% satisfaction rating within 3 months.
                         Engineered seamless data integration pathways (.csv, SQL) with llama index and advanced techniques, boosting data accessibility by 60% and retrieval efficiency by 70%, streamlining decision-making processes.
@@ -39,7 +39,7 @@ const Projects = () => {
                         skills="Python, Llama 3, Code-Lllama, Llama 2, OpenAI, ChromaDB, Langchain, DPO, RLHF, NLTK, Git/GitHub."
                     />
                     <ProjectCard
-                        src="/gfr-sc.png"
+                        src="./gfr-sc.png"
                         title="Estimating GFR Using Machine Learning"
                         highlights="Conducted a comprehensive analysis of 16 machine learning algorithms to identify the optimal algorithm for estimating Glomerular Filtration Rate (eGFR) in clinical settings.
                         Utilized Scikit-Learn for Regression Models, XGBoost for Decision Tree Models, and Tensorflow for Neural Networks.
