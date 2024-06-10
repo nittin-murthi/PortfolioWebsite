@@ -126,7 +126,7 @@ export const Skill_data = [
     },
     {
       skill_name: "Github",
-      Image: "./Github.png",
+      Image: "./github.png",
       width: 55,
       height: 80,
     },
