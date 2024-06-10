@@ -77,7 +77,7 @@ const HeroContent = () => {
 
             <div className="image-container">
                 <Image
-                    src="/IMG_1314.jpg"
+                    src="./IMG_1314.jpg"
                     alt="Lock top"
                     width={100}
                     height={50}
