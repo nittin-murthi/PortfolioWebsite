@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
                 <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
                     <Image
-                        src="/original-bebc6ee6409248426a2f4b54332e0caa.jpg"
+                        src="./original-bebc6ee6409248426a2f4b54332e0caa.jpg"
                         alt="logo"
                         width={50}
                         height={50}
