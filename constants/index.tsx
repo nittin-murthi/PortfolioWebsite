@@ -7,7 +7,7 @@ export const Skill_data = [
     },
     {
       skill_name: "C",
-      Image: "./c.png",
+      Image: "./C.png",
       width: 65,
       height: 65,
     },
