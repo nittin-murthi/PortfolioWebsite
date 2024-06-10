@@ -1,33 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
+.cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+.Welcome-text {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+  background-blend-mode: normal, screen;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Welcome-box {
+  isolation: isolate;
+  overflow: hidden;
+  align-items: center;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 32px;
+  box-shadow: inset 0 -7px 11px #a48fff1f;
+  display: flex;
+
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.button-primary {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
+    ),
+    rgba(113, 47, 255, 0.12);
+  box-shadow: inset 0 0 12px #bf97ff3d;
+}
+.button-primary:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
+    ),
+    rgba(113, 47, 255, 0.24);
+  box-shadow: inset 0 0 12px #bf97ff70;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
+
+.animated-gradient-text {
+  background-image: linear-gradient(to right, #FFFFFF, #90EE90, #0000FF, #FFFFFF, #90EE90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 800%;
+  animation: moveGradient 20s ease infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.hover\:scale-110:hover {
+  animation: scale 0.3s ease-in-out forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.letter {
+  opacity: 0;
+  animation: typing 0.5s forwards;
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+.letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.letter:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.letter:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.letter:nth-child(11) {
+  animation-delay: 1s;
+}
+.letter:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.letter:nth-child(13) {
+  animation-delay: 1.2s;
+}
+.letter:nth-child(14) {
+  animation-delay: 1.3s;
+}
+.letter:nth-child(15) {
+  animation-delay: 1.4s;
+}
+.letter:nth-child(16) {
+  animation-delay: 1.5s;
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(45deg, red, blue, green, yellow);
+  border-image-slice: 1;
+  animation: gradient 3s infinite;
+}
+@keyframes gradient {
+  0% {
+      border-image-source: linear-gradient(45deg, red, blue, green, yellow);
+  }
+  25% {
+      border-image-source: linear-gradient(45deg, yellow, red, blue, green);
+  }
+  50% {
+      border-image-source: linear-gradient(45deg, green, yellow, red, blue);
+  }
+  75% {
+      border-image-source: linear-gradient(45deg, blue, green, yellow, red);
+  }
+  100% {
+      border-image-source: linear-gradient(45deg, red, blue, green, yellow);
+  }
+}
+
+.cursor {
+  display: inline-block;
+  background-color: white;
+  width: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.skill-text {
+  display: inline-block;
+  font-family: monospace;
+  white-space: pre;
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.roadmap-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 80%;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.right {
+  flex-direction: row;
+}
+
+.roadmap-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Increased width */
+  margin: 10px;
+}
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 165, 0, 0.5), 0 0 40px rgba(255, 255, 0, 0.5), 0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 0, 255, 0.5), 0 0 70px rgba(75, 0, 130, 0.5), 0 0 80px rgba(238, 130, 238, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 0, 0, 1), 0 0 40px rgba(255, 165, 0, 1), 0 0 50px rgba(255, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 1), 0 0 70px rgba(0, 0, 255, 1), 0 0 80px rgba(75, 0, 130, 1), 0 0 90px rgba(238, 130, 238, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 165, 0, 0.5), 0 0 40px rgba(255, 255, 0, 0.5), 0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 0, 255, 0.5), 0 0 70px rgba(75, 0, 130, 0.5), 0 0 80px rgba(238, 130, 238, 0.5);
+  }
+}
+
+.image-container {
+  padding: 10px; /* Border size */
+  background: linear-gradient(45deg, red, yellow, green, cyan, blue, violet);
+  background-size: 200% 200%;
+  animation: gradient-border 10s linear infinite, glow 5s ease-in-out infinite alternate;
+  border-radius: 5px; /* Optional: to give the border rounded corners */
+  display: inline-block;
+}
+
+.image-container img {
+  border-radius: 10px; /* Match the border radius of the container if used */
 }
