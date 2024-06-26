@@ -47,18 +47,6 @@ const educationData = [
 
 const professionalData = [
   {
-    title: "AI Engineering Intern",
-    company: "thewalnut@ai",
-    period: "June 2024 - Present",
-    description: `
-      <ul>
-        <li>
-          Researching and developing NL2SQL models using Open-source LLMs.         
-        </li>      
-      </ul>
-    `,
-  },
-  {
     title: "LLM Research Intern",
     company: "Department of Electrical and Computer Engineering",
     period: "March 2024 - Present",
