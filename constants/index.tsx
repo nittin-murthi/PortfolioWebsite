@@ -83,12 +83,12 @@ export const Skill_data = [
   export const Socials = [
     {
         name: "LinkedIn",
-        src: "/LinkedIn_logo_initials.png",
+        src: "./LinkedIn_logo_initials.png",
         url: "https://www.linkedin.com/in/nittin-murthi-dhekshinamoorthy-1b4361279" // Replace with your LinkedIn profile URL
     },
     {
         name: "GitHub",
-        src: "/github-icon-2048x2048-qlv5m092.png",
+        src: "./github-icon-2048x2048-qlv5m092.png",
         url: "https://github.com/nittin-murthi" // Replace with your GitHub profile URL
     },
 ]; 
