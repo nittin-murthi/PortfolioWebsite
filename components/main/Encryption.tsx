@@ -1,36 +1,47 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // Assuming framer-motion is already imported
 import Image from "next/image";
-import { slideInFromTop } from "@/utils/motion";
 
 interface ExperienceItem {
-    title: string;
-    institution?: string;
-    company?: string;
-    period?: string;
-    location?: string;
-    description?: string;
-  }
-  
-  interface RoadmapProps {
-    data: ExperienceItem[];
-  }  
+  title: string;
+  institution?: string;
+  company?: string;
+  period?: string;
+  location?: string;
+  description?: string;
+}
+
+interface RoadmapProps {
+  data: ExperienceItem[];
+}
 
 // Dummy data for education and professional experiences
 const educationData = [
   {
-    title: "Bachelor's Degree in Computer Enginering",
+    title: "Bachelor's Degree in Computer Engineering",
     institution: "University of Illinois Urbana-Champaign",
     period: "2023 - 2027",
     location: "Champaign-Urbana, Illinois",
-    description: "Current Sophomore as a Computer Engineering major. I have currently completed coursework in fundamental digital logic design and embedded systems which provided me with a strong background in Assembly through the LC-3 and C/C++ with a strong background in mathematics and physics having completed coursework in three dimensional calculus and foundational linear algebra. I plan on conentrating within the field of Machine Learning and Artificial Intelligence through my technical electives in my upcoming years. I have already participated and gained valuable experience through research project within the field working under the suprvision of knowledgable professors and PhD Students.",
+    description: `
+      <ul>
+        <li>
+          As a current sophomore pursuing a Bachelor's degree in Computer Engineering at the University of Illinois Urbana-Champaign, I have engaged deeply in coursework encompassing digital logic design, circuit analysis, embedded systems, and Assembly with LC-3 and C/C++. 
+        </li>
+        <li>
+          My academic journey is underscored by a robust foundation in mathematics and physics, including advanced studies in three-dimensional calculus and linear algebra. I am particularly drawn to the realms of Machine Learning and Artificial Intelligence, leveraging hands-on experience gained through pivotal roles in research projects and internships. Under the mentorship of industry leaders, distinguished professors, and PhD students, I have contributed to cutting-edge developments in AI, refining my skills in data-driven problem-solving and innovative algorithm design.
+        </li>
+        <li>
+          My academic journey is underscored by a robust foundation in mathematics and physics, including advanced studies in three-dimensional calculus and linear algebra. I am particularly drawn to the realms of Machine Learning and Artificial Intelligence, leveraging hands-on experience gained through pivotal roles in research projects and internships. Under the mentorship of industry leaders, distinguished professors, and PhD students, I have contributed to cutting-edge developments in AI, refining my skills in data-driven problem-solving and innovative algorithm design.
+        </li>
+      </ul>
+    `,
   },
   {
     title: "High School Diploma",
     institution: "Stevenson High School",
-    location: "Lincolshire, Illinois",
-    description: "Completed High School Diploma at Stevenson High School. Succesfully completed and earned credit on 13 AP Courses. Parciticated in numerous academic and non-academic extracurriculars for personal enrichment.",
+    location: "Lincolnshire, Illinois",
+    description: "Achieved High School Diploma with distinction from Stevenson High School, excelling academically with completion and high achievement in 13 Advanced Placement (AP) courses. Beyond academic excellence, I actively participated in a diverse array of extracurricular activities, both academic and non-academic, enriching my personal growth and fostering a well-rounded skill set.",
   },
 ];
 
@@ -39,39 +50,87 @@ const professionalData = [
     title: "Research Intern",
     company: "Ecoservity Inc",
     period: "Dec. 2023 - Current",
-    description: "As an LLM Integration Engineer at Ecoservity Inc, I led the development of a state-of-the-art conversational bot using Llama 3, OpenAI API, llama-index, PandasAI and HuggingFace, achieving remarkable user engagement and satisfaction rates. I also engineered seamless data integration pathways for data analysis, boosting data accessibility and retrieval efficiency and most importantly data derived insights for further analysis. I implemented advanced techniques like Direct Preference Optimization (DPO) to fine-tune large language models and Reinforcement Learning from Human Feedback (RLHF) throughout the processes to continually optimize the accuracy and efficiency of the model. I closely collaborated with the CEO in order to deploy it on the company’s AWS server and Microsoft PowerBI. Finally, I was able to integrate all the existing capabilities of the bot with SQL and .json data formats using PandasAI.",
+    description: `
+      <ul>
+        <li>
+          As an LLM Integration Engineer at Ecoservity Inc, I spearheaded the development of an advanced conversational bot utilizing cutting-edge technologies including Llama 3, OpenAI API, llama-index, PandasAI, and HuggingFace. This project achieved exceptional user engagement and satisfaction rates.
+        </li>
+        <li>
+          Engineered seamless data integration pathways to enhance data accessibility and retrieval efficiency, thereby enabling deeper insights and informed decision-making.
+        </li>
+        <li>
+          Implemented advanced optimization techniques such as Direct Preference Optimization (DPO) and Reinforcement Learning from Human Feedback (RLHF) to continually refine and enhance the accuracy and efficiency of the language models.
+        </li>
+        <li>
+          Collaborated closely with executive leadership to deploy the solution on AWS and integrate with Microsoft PowerBI, leveraging SQL and .json data formats with PandasAI.
+        </li>
+      </ul>
+    `,
   },
   {
     title: "Deep Learning Research Intern",
     company: "Multimodality Research Lab, University of Illinois Urbana-Champaign",
     period: "Feb. 2023 - Present",
-    description: "During my research internship at the Multimodality Research Lab at the University of Illinois Urbana-Champaign, I developed and trained deep learning models on MRI brain scans, achieving notable results with U-Net, SegNet, and FCN architectures. I collaborated closely with a PhD student mentor, utilizing tools like TensorFlow, Keras, and Matplotlib to optimize model performance and contribute to the success of the research project.",
+    description: `
+      <ul>
+        <li>
+          Conducted pioneering research in deep learning, focusing on MRI brain scans using state-of-the-art architectures including U-Net, SegNet, and FCN.
+        </li>
+        <li>
+          Collaborated intensively with a PhD student mentor to optimize model performance using TensorFlow, Keras, and Matplotlib, contributing significantly to project success.
+        </li>
+      </ul>
+    `,
   },
   {
     title: "LLM Research Intern",
-    company: "Deparment of Electrical and Computer Engineering",
+    company: "Department of Electrical and Computer Engineering",
     period: "March 2023- Present",
-    description: "In an effort to enhance the learning experience for students enrolled in the introductory computer architecture design course ECE120, I developed an Artificial Intelligence-based Teaching Assistant. Leveraging Retrieval Augmented Generation (RAG) techniques with Langchain and ChromaDB, I provided assistance to students in C programming. To find the optimal balance between cost and performance, I experimented with multiple open-source and closed-source Large Language Models (LLMs), including Llama 3, LLama 2, Code-Llama, Mistral, GPT 3.5, and GPT-4. Additionally, I read research papers on novel RAG techniques such as self-correcting RAGs and Direct Preference Optimization (DPO), successfully implementing them to improve the overall performance of the Teaching Assistant.",
+    description: `
+      <ul>
+        <li>
+          Developed an innovative Artificial Intelligence-based Teaching Assistant to support students in the ECE120 course on computer architecture design.
+        </li>
+        <li>
+          Utilized advanced Retrieval Augmented Generation (RAG) techniques with Langchain and ChromaDB to enhance learning outcomes in C programming.
+        </li>
+        <li>
+          Experimented with a range of Large Language Models (LLMs) such as Llama 3, LLama 2, Code-Llama, Mistral, GPT 3.5, and GPT-4, integrating novel techniques like self-correcting RAGs and Direct Preference Optimization (DPO) to optimize Teaching Assistant performance.
+        </li>
+      </ul>
+    `,
   },
 ];
 
-const Roadmap = ({ data }: RoadmapProps ) => {
-    return (
-      <div className="roadmap-container">
-        {data.map((item, index) => (
-          <div key={index} className={`roadmap-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-            <div className="roadmap-content">
-              <h2 className="text-xl font-semibold">{item.title}</h2>
-              <h3 className="text-lg">{item.institution || item.company}</h3>
-              <p className="text-gray-600">{item.period}</p>
-              {item.location && <p className="text-gray-700">{item.location}</p>}
-              {item.description && <p className="text-black-700">{item.description}</p>}
-            </div>
+const Roadmap = ({ data }: RoadmapProps) => {
+  return (
+    <div className="roadmap-container overflow-hidden">
+      {data.map((item, index) => (
+        <motion.div
+          key={index}
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -50, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className={`roadmap-item ${index % 2 === 0 ? 'left' : 'right'}`}
+        >
+          <div className="roadmap-content">
+            <h2 className="text-xl font-semibold">{item.title}</h2>
+            <h3 className="text-lg">{item.institution || item.company}</h3>
+            <p className="text-gray-600">{item.period}</p>
+            {item.location && <p className="text-gray-700">{item.location}</p>}
+            {item.description && (
+              <div
+                className="text-black-700"
+                dangerouslySetInnerHTML={{ __html: item.description }}
+              />
+            )}
           </div>
-        ))}
-      </div>
-    );
-  };
+        </motion.div>
+      ))}
+    </div>
+  );
+};
 
 const Encryption = () => {
   const [selectedSection, setSelectedSection] = useState('Education');
@@ -80,8 +139,8 @@ const Encryption = () => {
     <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
-            variants={slideInFromTop}
-            className="text-[40px] font-medium text-center text-gray-200"
+          className="text-[40px] font-medium text-center text-gray-200"
+          id="research"
         >
           My
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -122,7 +181,7 @@ const Encryption = () => {
           playsInline
           preload="false"
           className="w-full h-auto"
-          src="./encryption.webm/"
+          src="./encryption.webm"
         />
       </div>
     </div>
