@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
             <h1 className='text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
                 Experience Highlights
             </h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-10'>
+            <div className='w-full max-w-4xl px-4'>
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}
@@ -80,7 +80,9 @@ const Projects: React.FC = () => {
                 ))}
             </div>
             {projects.length > 1 && (
-                <div className="mt-5">
+                <div className="mt-5 flex justify-center space-x-4">
+                    <button onClick={prevProject} className="px-4 py-2 bg-purple-500 text-white rounded"></button>
+                    <button onClick={nextProject} className="px-4 py-2 bg-cyan-500 text-white rounded"></button>
                 </div>
             )}
         </div>

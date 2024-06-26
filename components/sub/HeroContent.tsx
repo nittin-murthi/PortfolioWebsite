@@ -64,16 +64,16 @@ const HeroContent = () => {
                     className="text-lg animated-gradient-text my-12 w-auto text-left leading-[1.8] tracking-wide hover:scale-110 transition-transform duration-300 mx-auto"
                 >
                     <p className="mb-4">
-                        Hi there! I'm a computer engineering student at the University of Illinois Urbana-Champaign with a passion for AI. I've been diving into the world of deep learning algorithms and large language models, and it's been an amazing journey so far.
+                        Hi there! I am a computer engineering student at the University of Illinois Urbana-Champaign with a passion for AI. I have been diving into the world of deep learning algorithms and large language models, and it has been an amazing journey so far.
                     </p>
                     <p className="mb-4">
                         One of my favorite projects was leading the development of a conversational assistant at Ecoservity Inc. This assistant helps with structured data analysis, and it was so rewarding to see it come to life. I also built Image Segmentation models and LLM assistants using Retrieval Augmented Generation (RAG), which was a fantastic learning experience.
                     </p>
                     <p className="mb-4">
-                        I've had the chance to work with some incredible mentors, and together we achieved some exciting results training deep learning models on MRI brain scans using TensorFlow and Keras. Along the way, I've become skilled in Python, Java, and C/C++, and I've gotten pretty comfortable with frameworks like PyTorch and Scikit-Learn.
+                        I have had the chance to work with some incredible mentors, and together we achieved some exciting results training deep learning models on MRI brain scans using TensorFlow and Keras. Along the way, I have become skilled in Python, Java, and C/C++, and I have gotten pretty comfortable with frameworks like PyTorch and Scikit-Learn.
                     </p>
                     <p className="mb-4">
-                        If you're interested in AI, machine learning, or just want to chat about cool tech projects, feel free to check out my portfolio. I'm always open to new opportunities and collaborations. Let's create something amazing together!
+                        If you are interested in AI, machine learning, or just want to chat about cool tech projects, feel free to check out my portfolio. I am always open to new opportunities and collaborations. Lets create something amazing together!
                     </p>
                 </motion.div>
 

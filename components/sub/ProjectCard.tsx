@@ -11,6 +11,7 @@ interface Props {
     buttonText?: string;
     buttonLink?: string;
     buttonDownload?: boolean;
+    style?: React.CSSProperties; // Add this line
 }
 
 const ProjectCard = ({ src, title, highlights, skills, buttonText = 'View Image', buttonLink, buttonDownload = false }: Props) => {
