@@ -47,6 +47,51 @@ const educationData = [
 
 const professionalData = [
   {
+    title: "AI Engineering Intern",
+    company: "thewalnut@ai",
+    period: "June 2024 - Present",
+    description: `
+      <ul>
+        <li>
+          Researching and developing NL2SQL models using Open-source LLMs.         
+        </li>      
+      </ul>
+    `,
+  },
+  {
+    title: "LLM Research Intern",
+    company: "Department of Electrical and Computer Engineering",
+    period: "March 2024 - Present",
+    description: `
+      <ul>
+        <li>
+          Developed an innovative Artificial Intelligence-based Teaching Assistant to support students in the ECE120 course on computer architecture design.
+        </li>
+        <li>
+          Utilized advanced Retrieval Augmented Generation (RAG) techniques with Langchain and ChromaDB to enhance learning outcomes in C programming.
+        </li>
+        <li>
+          Experimented with a range of Large Language Models (LLMs) such as Llama 3, LLama 2, Code-Llama, Mistral, GPT 3.5, and GPT-4, integrating novel techniques like self-correcting RAGs and Direct Preference Optimization (DPO) to optimize Teaching Assistant performance.
+        </li>
+      </ul>
+    `,
+  },
+  {
+    title: "Deep Learning Research Intern",
+    company: "Multimodality Research Lab, University of Illinois Urbana-Champaign",
+    period: "Feb. 2024 - Present",
+    description: `
+      <ul>
+        <li>
+          Conducted pioneering research in deep learning, focusing on MRI brain scans using state-of-the-art architectures including U-Net, SegNet, and FCN.
+        </li>
+        <li>
+          Collaborated intensively with a PhD student mentor to optimize model performance using TensorFlow, Keras, and Matplotlib, contributing significantly to project success.
+        </li>
+      </ul>
+    `,
+  },
+  {
     title: "Research Intern",
     company: "Ecoservity Inc",
     period: "Dec. 2023 - Current",
@@ -63,39 +108,6 @@ const professionalData = [
         </li>
         <li>
           Collaborated closely with executive leadership to deploy the solution on AWS and integrate with Microsoft PowerBI, leveraging SQL and .json data formats with PandasAI.
-        </li>
-      </ul>
-    `,
-  },
-  {
-    title: "Deep Learning Research Intern",
-    company: "Multimodality Research Lab, University of Illinois Urbana-Champaign",
-    period: "Feb. 2023 - Present",
-    description: `
-      <ul>
-        <li>
-          Conducted pioneering research in deep learning, focusing on MRI brain scans using state-of-the-art architectures including U-Net, SegNet, and FCN.
-        </li>
-        <li>
-          Collaborated intensively with a PhD student mentor to optimize model performance using TensorFlow, Keras, and Matplotlib, contributing significantly to project success.
-        </li>
-      </ul>
-    `,
-  },
-  {
-    title: "LLM Research Intern",
-    company: "Department of Electrical and Computer Engineering",
-    period: "March 2023- Present",
-    description: `
-      <ul>
-        <li>
-          Developed an innovative Artificial Intelligence-based Teaching Assistant to support students in the ECE120 course on computer architecture design.
-        </li>
-        <li>
-          Utilized advanced Retrieval Augmented Generation (RAG) techniques with Langchain and ChromaDB to enhance learning outcomes in C programming.
-        </li>
-        <li>
-          Experimented with a range of Large Language Models (LLMs) such as Llama 3, LLama 2, Code-Llama, Mistral, GPT 3.5, and GPT-4, integrating novel techniques like self-correcting RAGs and Direct Preference Optimization (DPO) to optimize Teaching Assistant performance.
         </li>
       </ul>
     `,
