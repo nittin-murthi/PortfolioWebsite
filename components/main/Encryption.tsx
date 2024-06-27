@@ -31,9 +31,6 @@ const educationData = [
         <li>
           My academic journey is underscored by a robust foundation in mathematics and physics, including advanced studies in three-dimensional calculus and linear algebra. I am particularly drawn to the realms of Machine Learning and Artificial Intelligence, leveraging hands-on experience gained through pivotal roles in research projects and internships. Under the mentorship of industry leaders, distinguished professors, and PhD students, I have contributed to cutting-edge developments in AI, refining my skills in data-driven problem-solving and innovative algorithm design.
         </li>
-        <li>
-          My academic journey is underscored by a robust foundation in mathematics and physics, including advanced studies in three-dimensional calculus and linear algebra. I am particularly drawn to the realms of Machine Learning and Artificial Intelligence, leveraging hands-on experience gained through pivotal roles in research projects and internships. Under the mentorship of industry leaders, distinguished professors, and PhD students, I have contributed to cutting-edge developments in AI, refining my skills in data-driven problem-solving and innovative algorithm design.
-        </li>
       </ul>
     `,
   },
@@ -57,9 +54,6 @@ const professionalData = [
         </li>
         <li>
           Utilized advanced Retrieval Augmented Generation (RAG) techniques with Langchain and ChromaDB to enhance learning outcomes in C programming.
-        </li>
-        <li>
-          Experimented with a range of Large Language Models (LLMs) such as Llama 3, LLama 2, Code-Llama, Mistral, GPT 3.5, and GPT-4, integrating novel techniques like self-correcting RAGs and Direct Preference Optimization (DPO) to optimize Teaching Assistant performance.
         </li>
       </ul>
     `,
@@ -91,12 +85,6 @@ const professionalData = [
         <li>
           Engineered seamless data integration pathways to enhance data accessibility and retrieval efficiency, thereby enabling deeper insights and informed decision-making.
         </li>
-        <li>
-          Implemented advanced optimization techniques such as Direct Preference Optimization (DPO) and Reinforcement Learning from Human Feedback (RLHF) to continually refine and enhance the accuracy and efficiency of the language models.
-        </li>
-        <li>
-          Collaborated closely with executive leadership to deploy the solution on AWS and integrate with Microsoft PowerBI, leveraging SQL and .json data formats with PandasAI.
-        </li>
       </ul>
     `,
   },
@@ -121,7 +109,7 @@ const Roadmap = ({ data }: RoadmapProps) => {
             {item.location && <p className="text-gray-700">{item.location}</p>}
             {item.description && (
               <div
-                className="text-black-700"
+                className="text-black-700 roadmap-description"
                 dangerouslySetInnerHTML={{ __html: item.description }}
               />
             )}

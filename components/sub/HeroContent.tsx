@@ -84,12 +84,12 @@ const HeroContent = () => {
                 variants={slideInFromRight(0.8)}
                 className="w-full h-auto flex justify-center md:justify-end items-center md:items-end mt-10 md:mt-0"
             >
-                <div className="image-container w-40 md:w-[300px] h-40 md:h-[300px]">
+                <div className="image-container w-40 md:w-[300px] h-100 md:h-[300px]">
                     <Image
                         src="./headshot.png"
                         alt="Lock top"
-                        width={200}
-                        height={200}
+                        width={100}
+                        height={100}
                         className="w-full h-full transform transition-all duration-200 group-hover:translate-y-11"
                     />
                 </div>

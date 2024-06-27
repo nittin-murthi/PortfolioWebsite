@@ -744,3 +744,22 @@ ul li::before {
 .project-card-content {
   padding: 20px;
 }
+
+/* Assuming you are using Tailwind CSS or a similar utility-first CSS framework */
+@media (max-width: 768px) {
+  .roadmap-item {
+    font-size: 0.9rem; /* Adjust this value as needed */
+  }
+}
+
+@media (max-width: 640px) {
+  .roadmap-item {
+    font-size: 0.8rem; /* Adjust this value as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .roadmap-item {
+    font-size: 0.7rem; /* Adjust this value as needed */
+  }
+}
