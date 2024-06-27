@@ -9,21 +9,21 @@ const HeroContent = () => {
         <motion.div
             initial="hidden"
             animate="visible"
-            className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+            className="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 mt-20 md:mt-40 w-full z-[20]"
             id="about-me"
         >
-            <div className="h-full w-full flex flex-col gap-20 justify-center m-auto text-start">
+            <div className="h-full w-full flex flex-col gap-10 md:gap-20 justify-center text-start">
                 <motion.div
                     variants={slideInFromTop}
-                    className="Welcome-box py-[10px] px-[20px] border border-[#7042f88b] opacity-[0.9] ml-[40px]"
+                    className="Welcome-box py-2 px-4 md:py-[10px] md:px-[20px] border border-[#7042f88b] opacity-[0.9] ml-4 md:ml-[40px]"
                 >
-                    <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-                    <h1 className="Welcome-text text-[10px]"> Welcome to My Portfolio</h1>
+                    <SparklesIcon className="text-[#b49bff] mr-2 md:mr-[10px] h-5 w-5" />
+                    <h1 className="Welcome-text text-sm md:text-[10px]"> Welcome to My Portfolio</h1>
                 </motion.div>
 
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className="flex flex-col gap-6 mt-10 text-6xl font-bold text-white max-w-[600px] w-auto h-auto hover:scale-110 transition-transform duration-3000 ml-[40px]"
+                    className="flex flex-col gap-3 md:gap-6 mt-5 md:mt-10 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto hover:scale-110 transition-transform duration-3000 ml-4 md:ml-[40px]"
                 >
                     <span>
                         <span className="letter">E</span>
@@ -38,14 +38,15 @@ const HeroContent = () => {
                         <span className="letter">o</span>
                         <span className="letter">i</span>
                         <span className="letter">s</span>
-                    </span>{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 animate-gradient-x hover:scale-110 transition-transform duration-3000">
+                    </span>
+
+                    <span className="text-white">
                         <span className="letter">A</span>
                         <span className="letter">I</span>
                         <span className="letter">/</span>
                         <span className="letter">M</span>
                         <span className="letter">L</span>
-                        <span className="letter"> </span>
+                        <span className="letter space"> </span>
                         <span className="letter">E</span>
                         <span className="letter">n</span>
                         <span className="letter">t</span>
@@ -61,7 +62,7 @@ const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromLeft(0.8)}
-                    className="text-lg animated-gradient-text my-12 w-auto text-left leading-[1.8] tracking-wide hover:scale-110 transition-transform duration-300 mx-auto"
+                    className="text-base md:text-lg animated-gradient-text my-6 md:my-12 w-auto text-left leading-7 md:leading-[1.8] tracking-wide hover:scale-110 transition-transform duration-300 mx-4 md:mx-auto"
                 >
                     <p className="mb-4">
                         Hi there! I am a computer engineering student at the University of Illinois Urbana-Champaign with a passion for AI. I have been diving into the world of deep learning algorithms and large language models, and it has been an amazing journey so far.
@@ -81,19 +82,18 @@ const HeroContent = () => {
 
             <motion.div
                 variants={slideInFromRight(0.8)}
-                className="w-120 h-100 flex justify-end items-end w-full h-auto"
+                className="w-full h-auto flex justify-center md:justify-end items-center md:items-end mt-10 md:mt-0"
             >
-                <div className="image-container">
+                <div className="image-container w-40 md:w-[300px] h-40 md:h-[300px]">
                     <Image
-                        src="./IMG_1314.jpg"
+                        src="./headshot.png"
                         alt="Lock top"
-                        width={100}
-                        height={50}
-                        className="w-[300px] transform translate-x-0 translate-y-50 transition-all duration-200 group-hover:translate-y-11"
+                        width={200}
+                        height={200}
+                        className="w-full h-full transform transition-all duration-200 group-hover:translate-y-11"
                     />
                 </div>
             </motion.div>
-            
         </motion.div>
     );
 }
