@@ -91,7 +91,17 @@ export const Skill_data = [
         src: "./github-icon-2048x2048-qlv5m092.png",
         url: "https://github.com/nittin-murthi" // Replace with your GitHub profile URL
     },
-]; 
+    {
+        name: "Gmail",
+        src: "./Gmail_icon.png", // Replace with the path to your Gmail icon
+        url: "mailto:Nittin.murthi@gmail.com"
+    },
+    {
+        name: "Outlook",
+        src: "./51tOZiEHNLL.png", // Replace with the path to your Outlook icon
+        url: "mailto:ndhek2@illinois.edu"
+    }
+];
   
   export const ML_skills_front = [
     {

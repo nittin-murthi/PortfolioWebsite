@@ -657,17 +657,17 @@ ul li::before {
 }
 
 /* globals.css or any global CSS file */
-/* globals.css or styles.css */
-
 .project-card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  overflow: hidden; /* Ensure no content overflows */
-  margin-bottom: 20px; /* Adjust as per your design */
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .project-card-content {
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .project-card-title {
@@ -691,12 +691,12 @@ ul li::before {
 }
 
 .highlights-text.collapsed {
-  max-height: 4.8em; /* Adjust as per your design */
+  max-height: 4.8em;
 }
 
 .highlights-text.expanded {
-  max-height: 100%; /* Ensure full height when expanded */
-  overflow-y: auto; /* Enable scrolling if necessary */
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .project-card-skills {
@@ -709,8 +709,8 @@ ul li::before {
 }
 
 .skill {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: rgba(240, 240, 240, 0.1);
+  color: inherit;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -734,32 +734,73 @@ ul li::before {
   background-color: #0058b3;
 }
 
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden; /* Ensure no content overflows */
-  margin-bottom: 20px; /* Adjust as per your design */
-}
-
-.project-card-content {
-  padding: 20px;
-}
-
-/* Assuming you are using Tailwind CSS or a similar utility-first CSS framework */
 @media (max-width: 768px) {
   .roadmap-item {
-    font-size: 0.9rem; /* Adjust this value as needed */
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 640px) {
   .roadmap-item {
-    font-size: 0.8rem; /* Adjust this value as needed */
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .roadmap-item {
-    font-size: 0.7rem; /* Adjust this value as needed */
+    font-size: 0.7rem;
   }
+}
+
+.footer-container {
+  width: 100%;
+  background-color: transparent;
+  color: #e0e0e0;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.social-link {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin-top: 20px;
 }

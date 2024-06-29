@@ -65,7 +65,7 @@ const HeroContent = () => {
                     className="text-base md:text-lg animated-gradient-text my-6 md:my-12 w-auto text-left leading-7 md:leading-[1.8] tracking-wide hover:scale-110 transition-transform duration-300 mx-4 md:mx-auto"
                 >
                     <p className="mb-4">
-                        Hi there! I am a computer engineering student at the University of Illinois Urbana-Champaign with a passion for AI. I have been diving into the world of deep learning algorithms and large language models, and it has been an amazing journey so far.
+                        Hi there! I am a computer engineering student at the University of Illinois Urbana-Champaign with a passion for AI. I am currently an intern at thewalnut.ai as an AI developer intern where I have been diving into the world of deep learning algorithms and large language models, and it has been an amazing journey so far.
                     </p>
                     <p className="mb-4">
                         One of my favorite projects was leading the development of a conversational assistant at Ecoservity Inc. This assistant helps with structured data analysis, and it was so rewarding to see it come to life. I also built Image Segmentation models and LLM assistants using Retrieval Augmented Generation (RAG), which was a fantastic learning experience.

@@ -44,6 +44,30 @@ const educationData = [
 
 const professionalData = [
   {
+    title: "AI Developer Intern",
+    company: "thewalnut.ai",
+    period: "Jun. 2024 - Current",
+    description: `
+      <ul>
+        <li>
+          As an AI Developer at thewalnut.ai, I am working with Large Language Models (LLMs) and SQL databases in order to develop NL2SQL models using open-Source models which will enable interacting with SQL databases via Natural Language on private servers. 
+        </li>
+        <li>
+          Developed initial prototype using LLama 3 and the Langchain SQL Agent for intial testing purposes.
+        </li>
+        <li>
+          I have worked with both closed-source LLMs (GPT-3.5, GPT-4) and open-source LLMs (Llama 3, Mistral) and evaluated them on various benchmarks such as the Spider Benchmark and the Bird Benchmark to evaluate model capabilities and document them.
+        </li>
+        <li>
+          I am currently working on improving the performance of currently available open-source LLMs through Direct Preference Optimization (DPO), Fine-tuning and Reinforcement Learning from Human Feedback (RLHF) to improve open-source model performance for clients and reducing costs.
+        </li>
+        <li>
+          Conducting research into existing techniques and framework to augment that capabilites of LLMs to understand and interact with SQL databases. 
+        </li>
+      </ul>
+    `,
+  },
+  {
     title: "LLM Research Intern",
     company: "Department of Electrical and Computer Engineering",
     period: "March 2024 - Present",
@@ -80,7 +104,7 @@ const professionalData = [
     description: `
       <ul>
         <li>
-          As an LLM Integration Engineer at Ecoservity Inc, I spearheaded the development of an advanced conversational bot utilizing cutting-edge technologies including Llama 3, OpenAI API, llama-index, PandasAI, and HuggingFace. This project achieved exceptional user engagement and satisfaction rates.
+          As an LLM Integration Engineer at Ecoservity Inc, I led the development of an advanced conversational bot utilizing cutting-edge technologies including Llama 3, Ollama, Pandas, PandasAI, langchain, llama-index, and HuggingFace. This project achieved exceptional user engagement and satisfaction rates.
         </li>
         <li>
           Engineered seamless data integration pathways to enhance data accessibility and retrieval efficiency, thereby enabling deeper insights and informed decision-making.
